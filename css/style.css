@@ -32,25 +32,34 @@ body {
     text-align: center;
 }
 
-.profile-pic {
-    border-radius: 50%;
-    object-fit: cover;
-    grid-template-rows: "top";
-}
-
 .card-container {
     width: 325px;
     height: 375px;
+    position: relative;
     border-radius: 16px;
     overflow: hidden;
     background-image: url(../images/bg-pattern-card.svg);
     display: grid;
     grid-template-rows: 140px 147px 88px;
-    grid-template-columns: 325px;
     grid-template-areas:    "top"
                             "info"
                             "stats";
     justify-items: stretch;
+}
+
+.card-top {
+    grid-area: "top";
+}
+
+.profile-pic {
+    border-radius: 50%;
+    border: 5px solid white;
+    position: absolute;
+    width: 100px;
+    left: 50%;
+    margin-left: -50px;
+    top: 140px;
+    margin-top: -50px;
 }
 
 .profile-info {
