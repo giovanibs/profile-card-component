@@ -19,18 +19,22 @@ html {
 
 body {
     min-height: 100vh;
-    background: var(--dark-grayish-blue);
+    background: var(--dark-cyan);
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: top -210px left -290px, bottom -210px right -290px;
+    background-size: 500px, 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: "Kumbh Sans", sans-serif;
+    text-align: center;
 }
 
 .profile-pic {
     border-radius: 50%;
     object-fit: cover;
-    
     grid-template-rows: "top";
 }
 
@@ -39,7 +43,7 @@ body {
     height: 375px;
     border-radius: 10px;
     overflow: hidden;
-    background: var(--dark-cyan);
+    background-image: url(../images/bg-pattern-card.svg);
     display: grid;
     row-gap: 1px;
     grid-template-rows: 140px 145px 88px;
@@ -59,6 +63,17 @@ body {
     font-size: 1.8rem;
     font-weight: 700;
 }
+
+.profile-age {
+    color: var(--dark-gray);
+    font-weight: 400;
+}
+
+.profile-location {
+    color: var(--dark-gray);
+    font-weight: 400;
+}
+
 .profile-stats {
     background: white;
     display: flex;
@@ -72,4 +87,10 @@ body {
 .stats-value {
     font-size: 1.8rem;
     font-weight: 700;
+    line-height: 2.4rem;
+}
+
+.stats-heading {
+    color: var(--dark-gray);
+    letter-spacing: 2px;
 }
