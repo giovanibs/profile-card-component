@@ -41,12 +41,11 @@ body {
 .card-container {
     width: 325px;
     height: 375px;
-    border-radius: 10px;
+    border-radius: 16px;
     overflow: hidden;
     background-image: url(../images/bg-pattern-card.svg);
     display: grid;
-    row-gap: 1px;
-    grid-template-rows: 140px 145px 88px;
+    grid-template-rows: 140px 147px 88px;
     grid-template-columns: 325px;
     grid-template-areas:    "top"
                             "info"
@@ -57,11 +56,18 @@ body {
 .profile-info {
     grid-area: "info";
     background: white;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-top: 1px solid var(--dark-gray);
+    border-bottom: 1px solid var(--dark-gray);
 }
 
 .profile-name {
     font-size: 1.8rem;
     font-weight: 700;
+    line-height: 3rem;
 }
 
 .profile-age {
@@ -70,6 +76,7 @@ body {
 }
 
 .profile-location {
+    font-size: 1.2rem;
     color: var(--dark-gray);
     font-weight: 400;
 }
