@@ -5,6 +5,7 @@
     --very-dark-desaturated-blue: hsl(229, 23%, 23%);
     --dark-grayish-blue: hsl(227, 10%, 46%);
     --dark-gray: hsl(0, 0%, 59%);
+    --bright-orange: hsl(31, 77%, 52%);
 }
 
 * {
@@ -29,6 +30,7 @@ body {
     justify-content: center;
     align-items: center;
     font-family: "Kumbh Sans", sans-serif;
+    color: var(--very-dark-desaturated-blue);
     text-align: center;
 }
 
@@ -45,6 +47,7 @@ body {
                             "info"
                             "stats";
     justify-items: stretch;
+    margin-top: 6rem;
 }
 
 .card-top {
@@ -55,11 +58,11 @@ body {
     border-radius: 50%;
     border: 5px solid white;
     position: absolute;
-    width: 100px;
+    width: 106px;
     left: 50%;
-    margin-left: -50px;
+    margin-left: -53px;
     top: 140px;
-    margin-top: -50px;
+    margin-top: -53px;
 }
 
 .profile-info {
@@ -85,7 +88,7 @@ body {
 }
 
 .profile-location {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: var(--dark-gray);
     font-weight: 400;
 }
@@ -109,4 +112,15 @@ body {
 .stats-heading {
     color: var(--dark-gray);
     letter-spacing: 2px;
+}
+
+.attribution {
+    margin-top: 3rem;
+    line-height: 3rem;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: #FF8E9C;
 }
