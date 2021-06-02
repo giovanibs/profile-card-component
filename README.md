@@ -52,7 +52,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Continued development
 
-I'd like to dive deeper into CSS Grid and also bacome more fluent in background manipulation. 
+I'd like to dive deeper into CSS Grid and also become more fluent in background manipulation. 
 
 ### Useful resources
 
