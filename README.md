@@ -25,11 +25,11 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 - Desktop screenshot
 
-![](images/desktop-screenshot)
+![](images/desktop-screenshot.png)
 
 - Mobile screenshot
 
-![](images/mobile-screenshot)
+![](images/mobile-screenshot.png)
 
 ### Links
 
