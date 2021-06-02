@@ -23,8 +23,8 @@ body {
     background: var(--dark-cyan);
     background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
     background-repeat: no-repeat;
-    background-position: top -210px left -290px, bottom -210px right -290px;
-    background-size: 500px, 500px;
+    background-size: 600px, 600px;
+    background-position: top -330px left -390px, bottom -290px right -390px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,6 +41,7 @@ body {
     border-radius: 16px;
     overflow: hidden;
     background-image: url(../images/bg-pattern-card.svg);
+    background-position-x: center;
     display: grid;
     grid-template-rows: 140px 147px 88px;
     grid-template-areas:    "top"
@@ -68,27 +69,28 @@ body {
 .profile-info {
     grid-area: "info";
     background: white;
-    padding-bottom: 3rem;
+    padding-bottom: 2.5rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    border-top: 1px solid var(--dark-gray);
-    border-bottom: 1px solid var(--dark-gray);
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
 }
 
 .profile-name {
     font-size: 1.8rem;
     font-weight: 700;
-    line-height: 3rem;
+    line-height: 4rem;
 }
 
 .profile-age {
-    color: var(--dark-gray);
+    color: var(--dark-grayish-blue);
     font-weight: 400;
+    text-indent: 1rem;
 }
 
 .profile-location {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     color: var(--dark-gray);
     font-weight: 400;
 }
@@ -97,20 +99,26 @@ body {
     background: white;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     grid-area: "stats";
+    padding: 0 3.5rem;
 }
 
+.stats-container {
+    width: 70px;
+}
 
 .stats-value {
     font-size: 1.8rem;
     font-weight: 700;
-    line-height: 2.4rem;
+    line-height: 2.8rem;
 }
 
 .stats-heading {
-    color: var(--dark-gray);
+    color: var(--dark-grayish-blue);
+    line-height: 1.6rem;
+    font-size: 0.9rem;
     letter-spacing: 2px;
 }
 
@@ -124,3 +132,19 @@ body {
 .attribution a {
     color: #FF8E9C;
 }
+
+/*
+@media (min-width: 769px) {
+    
+    .card-container {
+        width: 350px;
+        height: 375px;
+    }
+
+    .profile-stats {
+        padding: 0 4.2rem;
+    }
+
+
+}
+*/
