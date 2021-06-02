@@ -48,6 +48,7 @@ body {
                             "stats";
     justify-items: stretch;
     margin-top: 6rem;
+    box-shadow: 0 0 1rem var(--very-dark-desaturated-blue);
 }
 
 .card-top {
@@ -124,7 +125,7 @@ body {
 .attribution {
     margin-top: 3rem;
     line-height: 3rem;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-align: center;
 }
 
