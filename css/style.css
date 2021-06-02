@@ -6,6 +6,7 @@
     --dark-grayish-blue: hsl(227, 10%, 46%);
     --dark-gray: hsl(0, 0%, 59%);
     --bright-orange: hsl(31, 77%, 52%);
+    --grayish-blue: hsla(227, 10%, 46%, 0.5);
 }
 
 * {
@@ -48,7 +49,7 @@ body {
                             "stats";
     justify-items: stretch;
     margin-top: 6rem;
-    box-shadow: 0 0 1rem var(--very-dark-desaturated-blue);
+    box-shadow: 0 0 6rem var(--grayish-blue);
 }
 
 .card-top {
@@ -91,7 +92,7 @@ body {
 
 .profile-location {
     font-size: 1.4rem;
-    color: var(--dark-gray);
+    color: var(--dark-grayish-blue);
     font-weight: 400;
 }
 
